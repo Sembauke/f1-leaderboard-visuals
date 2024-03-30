@@ -1,9 +1,10 @@
 .leaderboard {
   width: 200px;
-  height: 600px;
-  background: #38383f;
-  border-radius: 15px 0 0 15px;
+  height: 640px;
+  background: rgba(7, 7, 7, 0.9);
+  border-radius: 5px 0 0 5px;
   padding: 1em;
+  position: relative;
 }
 
 .leaderboard h1 {
@@ -12,10 +13,16 @@
   text-align: center;
 }
 
+.outer {
+  display: inline-block;
+  padding: 10px 0 10px 10px;
+  border-radius: 15px 0 0 15px;
+  background: rgb(255, 255, 255, 0.2);
+}
+
 .header {
   display: flex;
-  border-bottom: gray 1px solid;
-  height: 50px;
+  height: 40px;
 }
 
 .title {
@@ -29,4 +36,10 @@
   height: 100px;
   position: relative;
   margin-top: -40px;
+}
+
+.lapcounter {
+  color: white;
+  text-align: center;
+  font-style: italic;
 }
