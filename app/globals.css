@@ -1,11 +1,14 @@
 table {
   color: white;
+  font-size: 14px;
 }
 
 table tr td:first-child {
   color: grey;
-  font-style: italic;
-  padding: 3px 0;
+  font-family: 'Formula1-italic', sans-serif;
+  padding: 3px 2px;
+  border-right: 1px solid rgb(51, 51, 51);
+  text-align: left;
 }
 
 table tr td:nth-child(2) {
@@ -13,10 +16,31 @@ table tr td:nth-child(2) {
 }
 
 td {
-  padding: 4px 15px;
+  padding: 4px 8px;
 }
 
 body {
   background: url('../public/f1-background.webp');
   background-size: cover;
+  font-family: 'Formula1', sans-serif !important;
+}
+
+@font-face {
+  font-family: 'Formula1';
+  src: url('../public/fonts/Formula1-Regular-1.ttf');
+}
+
+@font-face {
+  font-family: 'Formula1-bold';
+  src: url('../public/fonts/Formula1-Bold-2.ttf');
+}
+
+@font-face {
+  font-family: 'Formula1-italic';
+  src: url('../public/fonts/Formula1-Italic.ttf');
+}
+
+@font-face {
+  font-family: 'Formula1-wide';
+  src: url('../public/fonts/Formula1-Wide.ttf');
 }
